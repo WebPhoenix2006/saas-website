@@ -1,0 +1,19 @@
+.headerPar{
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.banner {
+  background-image: url("/assets/images/background.png");
+  padding: 0 200px;
+  background-position-x: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 275px;
+  .banner-text{
+    h2{
+        line-height: 1.1;
+        font-size: 55px;
+    }
+  }
+}

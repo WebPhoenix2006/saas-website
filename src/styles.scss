@@ -1,1 +1,181 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~font-awesome/css/font-awesome.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@font-face {
+  font-family: NunitoExtraBold;
+  src: url(assets/fonts/Nunito/static/Nunito-ExtraBold.ttf);
+}
+@font-face {
+  font-family: NunitoBold;
+  src: url(assets/fonts/Nunito/static/Nunito-Bold.ttf);
+}
+
+@font-face {
+  font-family: NunitoRegular;
+  src: url(assets/fonts/Nunito/static/Nunito-Regular.ttf);
+}
+$priCol1: #5236ff;
+$priCol2: #242331;
+$secondCol1: #f9f9f9;
+$secondCol2: #efecff;
+$secondCol3: #242331;
+$secondCol4: #797979;
+$white: #ffffff;
+body {
+  overflow-x: hidden;
+}
+.textPrimary1 {
+  color: $priCol1;
+}
+
+.textPrimary2 {
+  color: $priCol2;
+}
+
+.bgPrimary1 {
+  background-color: $priCol1;
+  color: #fff;
+}
+
+.bgPrimary2 {
+  background-color: $priCol2;
+  color: #fff;
+}
+
+.textSecond1 {
+  color: $secondCol1;
+}
+
+.textSecond2 {
+  color: $secondCol2;
+}
+
+.bgSecond1 {
+  background-color: $secondCol1;
+  color: $priCol1;
+}
+
+.bgSecond2 {
+  background-color: $secondCol2;
+  color: $priCol1;
+}
+
+.bgSecond3 {
+  background-color: $secondCol3;
+  color: $priCol1;
+}
+
+.bgSecond4 {
+  background-color: $secondCol4;
+  color: $priCol1;
+}
+
+.bgWhite {
+  background-color: $white;
+  color: $priCol1;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 1.25;
+  color: $priCol2;
+  font-family: NunitoExtraBold;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1.25;
+  color: $priCol2;
+  font-family: NunitoBold;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 1.25;
+  color: $priCol2;
+  font-family: NunitoBold;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 1.25;
+  font-family: NunitoBold;
+  color: $priCol2;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-family: NunitoBold;
+  color: $priCol2;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 1.25;
+  font-family: NunitoBold;
+  color: $priCol2;
+}
+
+.largePar {
+  font-size: 25px;
+  line-height: 1.57;
+  font-family: NunitoRegular;
+  color: $secondCol4;
+}
+
+.defaultPar {
+  font-size: 25px;
+  line-height: 1.57;
+  font-family: NunitoRegular;
+  color: $secondCol4;
+}
+
+ul {
+  li {
+    font-size: 22px;
+    line-height: 2.74;
+    font-family: NunitoRegular;
+    color: $secondCol4;
+  }
+}
+
+.blockquote {
+  font-size: 25px !important;
+  line-height: 1.57;
+  font-family: NunitoRegular;
+  color: $priCol2;
+}
+
+.button {
+  color: $white;
+  border-radius: 39px;
+  gap: 10px;
+  padding: 25px 58px;
+  width: 179px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  font-family: NunitoRegular;
+  justify-content: center;
+
+  &.small {
+    width: 165px;
+  }
+
+  &.large {
+    width: 226px;
+  }
+
+  &.cart {
+    width: 441px;
+  }
+
+  &.primary {
+    background-color: $priCol1;
+  }
+
+  &.secondary {
+    background-color: $secondCol3;
+  }
+}

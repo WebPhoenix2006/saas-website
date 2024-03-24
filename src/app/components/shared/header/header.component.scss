@@ -18,6 +18,7 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
+
     .navbar-nav {
       display: flex;
       align-items: center;
@@ -25,12 +26,14 @@ header {
       justify-content: center;
       gap: 10px;
       border-radius: 39px;
+
       .nav-link {
         display: flex;
         padding: 0 !important;
         a {
           display: flex;
           padding: 10px 15px;
+
           &.dropdown {
             position: relative;
             & > .dropdownEl {
@@ -48,17 +51,17 @@ header {
                 a {
                   color: #fff;
                   display: flex;
-                  &:hover{
+                  &:hover {
                     background-color: #fff;
                     color: #000;
                   }
                 }
               }
             }
-            &:hover{
-              .dropdownEl{
+            &:hover {
+              .dropdownEl {
                 visibility: visible;
-                transition: all .3s ease;
+                transition: all 0.3s ease;
                 top: 100%;
               }
             }

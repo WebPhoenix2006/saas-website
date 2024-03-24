@@ -1,0 +1,32 @@
+.about {
+  padding: 59px 200px;
+  &__header {
+    width: 450px;
+    margin-inline: auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  &__image {
+    display: flex;
+    gap: 40px;
+    width: 700px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__service {
+    display: flex;
+    gap: 50px;
+    margin-top: 59px;
+  }
+
+  .title {
+    width: 50%;
+  }
+}

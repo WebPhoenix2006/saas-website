@@ -23,6 +23,7 @@ $secondCol4: #797979;
 $white: #ffffff;
 body {
   overflow-x: hidden;
+
 }
 .textPrimary1 {
   color: $priCol1;
@@ -156,16 +157,14 @@ ul {
   color: $white;
   border-radius: 39px;
   gap: 10px;
-  padding: 25px 58px;
-  width: 179px;
-  height: 75px;
+  padding: 10px 10px;
   display: flex;
   align-items: center;
   font-family: NunitoRegular;
   justify-content: center;
 
   &.small {
-    width: 165px;
+    width: 80px;
   }
 
   &.large {
@@ -182,5 +181,31 @@ ul {
 
   &.secondary {
     background-color: $secondCol3;
+  }
+}
+a {
+  display: flex;
+  &.dropdown {
+    position: relative;
+    & > .dropdownEl {
+      position: absolute;
+      z-index: 999;
+      width: 100px;
+      left: 50%;
+      top: 90%;
+      list-style: none;
+      border-radius: 5px;
+      padding: 10px 0;
+      li {
+        a {
+          color: #fff;
+          display: flex;
+          &:hover{
+            background-color: #fff;
+            color: #000;
+          }
+        }
+      }
+    }
   }
 }

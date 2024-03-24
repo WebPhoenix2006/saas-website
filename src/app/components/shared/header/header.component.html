@@ -13,24 +13,43 @@
         <div class="main-nav-bar">
           <ul class="navbar-nav bgSecond1">
             <li class="nav-link">
-              <a routerLink="/" class="">Home</a>
+              <a routerLink="/" class="textPrimary2">Home</a>
             </li>
             <li class="nav-link">
-              <a routerLink="/" class="">About</a>
+              <a routerLink="/" class="textPrimary2">About</a>
             </li>
             <li class="nav-link">
-              <a routerLink="/" class="">Features</a>
+              <a
+                routerLink="/"
+                class="dropdown textPrimary2 d-flex align-items-center"
+                >Features
+                <span class="ps-1"><i class="fa fa-caret-down"></i></span>
+                <ul class="dropdownEl bgPrimary1 ps-0">
+                  <li>
+                    <a routerLink="/">Home</a>
+                  </li>
+                  <li>
+                    <a routerLink="/">You</a>
+                  </li>
+                  <li>
+                    <a routerLink="/">Mee</a>
+                  </li>
+                </ul>
+              </a>
             </li>
             <li class="nav-link">
-              <a routerLink="/" class="">Pages</a>
+              <a routerLink="/" class="textPrimary2 d-flex align-items-center"
+                >Pages <span class="ps-1"><i class="fa fa-caret-down"></i></span
+              ></a>
             </li>
             <li class="nav-link">
-              <a routerLink="/">Blog</a>
+              <a routerLink="/" class="textPrimary2">Blog</a>
             </li>
-            <li class="nav-link" class="">
-              <a routerLink="/">Contact</a>
+            <li class="nav-link">
+              <a routerLink="/" class="textPrimary2">Contact</a>
             </li>
           </ul>
+          <a routerLink="/" class="button small primary">Sign In</a>
         </div>
       </div>
     </div>

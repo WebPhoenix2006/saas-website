@@ -1,5 +1,5 @@
 header {
-  padding: 59px 250px;
+  padding: 59px 200px;
   .main-nav-brand {
     display: flex;
     align-items: center;
@@ -9,24 +9,61 @@ header {
       height: auto;
       width: 58.36px;
     }
-    h1{
-        font-size: 30px;
-        margin-bottom: 0;
+    h1 {
+      font-size: 30px;
+      margin-bottom: 0;
     }
   }
-  .navbar-nav{
+  .main-nav-bar {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 39px;
-    .nav-link{
+    gap: 20px;
+    .navbar-nav {
       display: flex;
-      padding: 0 !important;
-      a{
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 39px;
+      .nav-link {
         display: flex;
-        padding: 10px 15px;
+        padding: 0 !important;
+        a {
+          display: flex;
+          padding: 10px 15px;
+          &.dropdown {
+            position: relative;
+            & > .dropdownEl {
+              position: absolute;
+              z-index: 999;
+              width: 100px;
+              height: auto;
+              visibility: hidden;
+              left: 50%;
+              top: 0;
+              list-style: none;
+              border-radius: 5px;
+              padding: 10px 0;
+              li {
+                a {
+                  color: #fff;
+                  display: flex;
+                  &:hover{
+                    background-color: #fff;
+                    color: #000;
+                  }
+                }
+              }
+            }
+            &:hover{
+              .dropdownEl{
+                visibility: visible;
+                transition: all .3s ease;
+                top: 100%;
+              }
+            }
+          }
+        }
       }
     }
   }

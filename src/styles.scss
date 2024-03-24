@@ -21,9 +21,23 @@ $secondCol2: #efecff;
 $secondCol3: #242331;
 $secondCol4: #797979;
 $white: #ffffff;
+
+// CSS RESET
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   overflow-x: hidden;
+}
 
+.textWhite {
+  color: #222 !important;
 }
 .textPrimary1 {
   color: $priCol1;
@@ -131,7 +145,7 @@ h6 {
   font-family: NunitoRegular;
   color: $secondCol4;
 }
-a{
+a {
   font-size: 14px;
   line-height: 1.57;
   font-family: NunitoRegular;
@@ -200,7 +214,7 @@ a {
         a {
           color: #fff;
           display: flex;
-          &:hover{
+          &:hover {
             background-color: #fff;
             color: #000;
           }
@@ -209,3 +223,9 @@ a {
     }
   }
 }
+
+// .headerPar {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+// }

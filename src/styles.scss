@@ -125,12 +125,17 @@ h6 {
 }
 
 .defaultPar {
-  font-size: 25px;
+  font-size: 14px;
   line-height: 1.57;
   font-family: NunitoRegular;
   color: $secondCol4;
 }
-
+a{
+  font-size: 14px;
+  line-height: 1.57;
+  font-family: NunitoRegular;
+  text-decoration: none;
+}
 ul {
   li {
     font-size: 22px;

@@ -95,25 +95,11 @@ h6 {
 }
 
 .defaultPar {
-<<<<<<< HEAD
-  font-size: 1.4rem;
-=======
-  font-size: 25px;
->>>>>>> 3d99094cbf45e173a8e6a4574cdb546cdfe110bf
+  font-size: 2.25;
   line-height: 1.57;
   font-family: NunitoRegular;
   color: var(--clr-secondary-600);
 }
-<<<<<<< HEAD
-a {
-  font-size: 1.4rem;
-  line-height: 1.57;
-  font-family: NunitoRegular;
-  text-decoration: none;
-}
-=======
-
->>>>>>> 3d99094cbf45e173a8e6a4574cdb546cdfe110bf
 ul {
   li {
     font-size: 2.2rem;
@@ -134,64 +120,66 @@ ul {
   color: var(--clr-white) !important;
 }
 .textPrimary1 {
-  color: var(--clr-primary);
+  color: var(--clr-primary) !important;
 }
 
 .textPrimary2 {
-  color: var(--clr-dark);
+  color: var(--clr-dark) !important;
 }
 
 .textSecond1 {
-  color: var(--clr-primary);
+  color: var(--clr-primary) !important;
 }
 
 .textSecond2 {
-  color: var(--clr-secondary-300);
+  color: var(--clr-secondary-300) !important;
 }
 
 .bgPrimary1 {
-  background-color: var(--clr-primary);
-  color: var(--clr-white);
+  background-color: var(--clr-primary) !important;
+  color: var(--clr-white) !important;
 }
 
 .bgPrimary2 {
-  background-color: var(--clr-dark);
-  color: var(--clr-white);
+  background-color: var(--clr-dark) !important;
+  color: var(--clr-white) !important;
 }
 
 .bgSecond1 {
-  background-color: var(--clr-primary);
-  color: var(--clr-primary);
+  background-color: var(--clr-primary) !important;
+  color: var(--clr-primary) !important;
 }
 
 .bgSecond2 {
-  background-color: var(--clr-secondary-300);
-  color: var(--clr-primary);
+  background-color: var(--clr-secondary-300) !important;
+  color: var(--clr-primary) !important;
 }
 
 .bgSecond3 {
-  background-color: var(--clr-dark);
-  color: var(--clr-primary);
+  background-color: var(--clr-dark) !important;
+  color: var(--clr-primary) !important;
 }
 
 .bgSecond4 {
-  background-color: var(--clr-secondary-600);
-  color: var(--clr-primary);
+  background-color: var(--clr-secondary-600) !important;
+  color: var(--clr-primary) !important;
 }
 
 .bgWhite {
-  background-color: hsla(0, 0%, 100%, 0.1);
+  background-color: hsla(0, 0%, 100%, 0.1) !important;
 }
 
 .button {
   color: var(--clr-white);
   border-radius: 3.9rem;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem !important;
   display: flex;
   align-items: center;
   font-family: NunitoRegular;
   justify-content: center;
+  font-weight: bold;
+  border: none;
 
   &.small {
     width: 8rem;
@@ -215,6 +203,10 @@ ul {
 }
 a {
   display: flex;
+  text-decoration: none;
+  font-family: NunitoRegular;
+
+  font-size: 1.5rem;
   &.dropdown {
     position: relative;
     & > .dropdownEl {

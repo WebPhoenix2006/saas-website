@@ -14,14 +14,18 @@
   font-family: NunitoRegular;
   src: url(assets/fonts/Nunito/static/Nunito-Regular.ttf);
 }
-$priCol1: #5236ff;
-$priCol2: #242331;
-$secondCol1: #f9f9f9;
-$secondCol2: #efecff;
-$secondCol3: #242331;
-$secondCol4: #797979;
-$white: #ffffff;
 
+// CSS VARIABLES
+
+:root {
+  --clr-primary: #5236ff;
+  --clr-dark: #242331;
+
+  --clr-white: #ffffff;
+  --clr-secondary-200: #f9f9f9;
+  --clr-secondary-300: #efecff;
+  --clr-secondary-600: #797979;
+}
 // CSS RESET
 
 *,
@@ -32,169 +36,181 @@ $white: #ffffff;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.6rem;
   overflow-x: hidden;
 }
 
-.textWhite {
-  color: #222 !important;
-}
-.textPrimary1 {
-  color: $priCol1;
-}
-
-.textPrimary2 {
-  color: $priCol2;
-}
-
-.bgPrimary1 {
-  background-color: $priCol1;
-  color: #fff;
-}
-
-.bgPrimary2 {
-  background-color: $priCol2;
-  color: #fff;
-}
-
-.textSecond1 {
-  color: $secondCol1;
-}
-
-.textSecond2 {
-  color: $secondCol2;
-}
-
-.bgSecond1 {
-  background-color: $secondCol1;
-  color: $priCol1;
-}
-
-.bgSecond2 {
-  background-color: $secondCol2;
-  color: $priCol1;
-}
-
-.bgSecond3 {
-  background-color: $secondCol3;
-  color: $priCol1;
-}
-
-.bgSecond4 {
-  background-color: $secondCol4;
-  color: $priCol1;
-}
-
-.bgWhite {
-  background-color: $white;
-  color: $priCol1;
-}
-
 h1 {
-  font-size: 50px;
+  font-size: 5rem;
   line-height: 1.25;
-  color: $priCol2;
+  color: var(--clr-dark);
   font-family: NunitoExtraBold;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 1.25;
-  color: $priCol2;
+  color: var(--clr-dark);
   font-family: NunitoBold;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 1.25;
-  color: $priCol2;
+  color: var(--clr-dark);
   font-family: NunitoBold;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 1.25;
   font-family: NunitoBold;
-  color: $priCol2;
+  color: var(--clr-dark);
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.25;
   font-family: NunitoBold;
-  color: $priCol2;
+  color: var(--clr-dark);
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.25;
   font-family: NunitoBold;
-  color: $priCol2;
+  color: var(--clr-dark);
 }
 
 .largePar {
-  font-size: 25px;
+  font-size: 2.5rem;
   line-height: 1.57;
   font-family: NunitoRegular;
-  color: $secondCol4;
+  color: var(--clr-secondary-600);
 }
 
 .defaultPar {
-  font-size: 14px;
+<<<<<<< HEAD
+  font-size: 1.4rem;
+=======
+  font-size: 25px;
+>>>>>>> 3d99094cbf45e173a8e6a4574cdb546cdfe110bf
   line-height: 1.57;
   font-family: NunitoRegular;
-  color: $secondCol4;
+  color: var(--clr-secondary-600);
 }
+<<<<<<< HEAD
 a {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.57;
   font-family: NunitoRegular;
   text-decoration: none;
 }
+=======
+
+>>>>>>> 3d99094cbf45e173a8e6a4574cdb546cdfe110bf
 ul {
   li {
-    font-size: 22px;
+    font-size: 2.2rem;
     line-height: 2.74;
     font-family: NunitoRegular;
-    color: $secondCol4;
+    color: var(--clr-secondary-600);
   }
 }
 
 .blockquote {
-  font-size: 25px !important;
+  font-size: 2.5rem !important;
   line-height: 1.57;
   font-family: NunitoRegular;
-  color: $priCol2;
+  color: var(--clr-dark);
+}
+
+.textWhite {
+  color: var(--clr-white) !important;
+}
+.textPrimary1 {
+  color: var(--clr-primary);
+}
+
+.textPrimary2 {
+  color: var(--clr-dark);
+}
+
+.textSecond1 {
+  color: var(--clr-primary);
+}
+
+.textSecond2 {
+  color: var(--clr-secondary-300);
+}
+
+.bgPrimary1 {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+}
+
+.bgPrimary2 {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+
+.bgSecond1 {
+  background-color: var(--clr-primary);
+  color: var(--clr-primary);
+}
+
+.bgSecond2 {
+  background-color: var(--clr-secondary-300);
+  color: var(--clr-primary);
+}
+
+.bgSecond3 {
+  background-color: var(--clr-dark);
+  color: var(--clr-primary);
+}
+
+.bgSecond4 {
+  background-color: var(--clr-secondary-600);
+  color: var(--clr-primary);
+}
+
+.bgWhite {
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 
 .button {
-  color: $white;
-  border-radius: 39px;
-  gap: 10px;
-  padding: 10px 10px;
+  color: var(--clr-white);
+  border-radius: 3.9rem;
+  gap: 1rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   font-family: NunitoRegular;
   justify-content: center;
 
   &.small {
-    width: 80px;
+    width: 8rem;
   }
 
   &.large {
-    width: 226px;
+    width: 22.6rem;
   }
 
   &.cart {
-    width: 441px;
+    width: 44.1rem;
   }
 
   &.primary {
-    background-color: $priCol1;
+    background-color: var(--clr-primary);
   }
 
   &.secondary {
-    background-color: $secondCol3;
+    background-color: var(--clr-dark);
   }
 }
 a {
@@ -204,18 +220,18 @@ a {
     & > .dropdownEl {
       position: absolute;
       z-index: 999;
-      width: 100px;
+      width: 10rem;
       left: 50%;
       top: 90%;
       list-style: none;
-      border-radius: 5px;
-      padding: 10px 0;
+      border-radius: 0.5rem;
+      padding: 1rem 0;
       li {
         a {
-          color: #fff;
+          color: var(--clr-white);
           display: flex;
           &:hover {
-            background-color: #fff;
+            background-color: var(--clr-white);
             color: #000;
           }
         }
@@ -223,9 +239,3 @@ a {
     }
   }
 }
-
-// .headerPar {
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-// }

@@ -29,4 +29,26 @@
   .title {
     width: 50%;
   }
+
+  &__reports {
+    margin-top: 7rem;
+    padding: 4.65rem 3.35rem;
+
+    background-color: #f9f9f9;
+    border-radius: 2.5rem;
+  }
+
+  h2 {
+    span {
+      color: #5236ff;
+    }
+  }
+
+  &__mission {
+    margin-top: 10.5rem;
+
+    h3 {
+      margin-bottom: 1.3rem;
+    }
+  }
 }

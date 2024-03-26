@@ -1,5 +1,5 @@
 header {
-  padding: 59px 200px;
+  padding: 59px 150px;
   .main-nav-brand {
     display: flex;
     align-items: center;
@@ -18,21 +18,25 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
-
+    a.button{
+      padding: 2rem !important;
+      background-color: #fff;
+      color: var(--clr-dark);
+    }
     .navbar-nav {
       display: flex;
       align-items: center;
       flex-direction: row;
       justify-content: center;
-      gap: 10px;
+      gap: 25px;
       border-radius: 39px;
-
+      padding: 0 40px;
       .nav-link {
         display: flex;
         padding: 0 !important;
         a {
           display: flex;
-          padding: 10px 15px;
+          padding: 10px 7px;
 
           &.dropdown {
             position: relative;

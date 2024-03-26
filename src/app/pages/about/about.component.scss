@@ -1,54 +1,36 @@
 .about {
   padding: 59px 200px;
-  &__header {
-    width: 450px;
-    margin-inline: auto;
-    text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
+  &__header {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
   }
 
   &__image {
-    display: flex;
-    gap: 40px;
-    width: 700px;
-
-    img {
-      object-fit: cover;
-    }
+    margin-top: 3.9rem;
+    gap: 2rem;
   }
 
-  &__service {
-    display: flex;
-    gap: 50px;
-    margin-top: 59px;
-  }
-
-  .title {
-    width: 50%;
+  &__services {
+    margin-top: 8.1rem;
   }
 
   &__reports {
     margin-top: 7rem;
+    background-color: var(--clr-secondary-200);
     padding: 4.65rem 3.35rem;
-
-    background-color: #f9f9f9;
     border-radius: 2.5rem;
-  }
+    margin-bottom: 21rem;
 
-  h2 {
-    span {
-      color: #5236ff;
+    h2 {
+      span {
+        color: var(--clr-primary);
+      }
     }
   }
 
   &__mission {
-    margin-top: 10.5rem;
-
-    h3 {
-      margin-bottom: 1.3rem;
-    }
+    gap: 2.4rem;
   }
 }

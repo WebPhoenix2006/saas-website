@@ -49,10 +49,10 @@ header {
               padding: 10px 0;
               li {
                 a {
-                  color: #fff;
+                  color: var(--clr-white);
                   display: flex;
                   &:hover {
-                    background-color: #fff;
+                    background-color: var(--clr-white);
                     color: #000;
                   }
                 }

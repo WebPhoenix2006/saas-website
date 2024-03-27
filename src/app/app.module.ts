@@ -13,8 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'Home', component: HomeComponent },
-  { path: 'About', component: AboutComponent },
+  { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({

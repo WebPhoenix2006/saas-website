@@ -1,10 +1,47 @@
 import { Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
 
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      740: {
+        items: 1,
+      },
+      940: {
+        items: 1,
+      },
+      1240: {
+        items: 2,
+      }
+    },
+    nav: true,
+  };
+  slides = [
+    { id: '1', img: 'https://dummyimage.com/350x150/423b42/fff' },
+    { id: '2', img: 'https://dummyimage.com/350x150/2a2b7a/fff' },
+    { id: '3', img: 'https://dummyimage.com/350x150/1a2b7a/fff' },
+    { id: '4', img: 'https://dummyimage.com/350x150/7a2b7a/fff' },
+    { id: '5', img: 'https://dummyimage.com/350x150/9a2b7a/fff' },
+    { id: '6', img: 'https://dummyimage.com/350x150/5a2b7a/fff' },
+    { id: '7', img: 'https://dummyimage.com/350x150/4a2b7a/fff' },
+  ];
 }

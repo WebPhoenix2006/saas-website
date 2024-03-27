@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { SvgIconsComponent } from './components/shared/svg-icons/svg-icons.component';
 import { HeaderComponent } from './components/shared/header/header.component';
@@ -24,7 +26,7 @@ const routes: Routes = [
     HeaderComponent,
     AboutComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, BrowserAnimationsModule,CarouselModule,  AppRoutingModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],
 })

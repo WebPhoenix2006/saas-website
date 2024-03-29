@@ -11,12 +11,16 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { FeaturesComponent } from './pages/features/features.component';
 
 // DEFINE THE ROUTES HERE
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'features', component: FeaturesComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
@@ -27,8 +31,16 @@ const routes: Routes = [
     HeaderComponent,
     AboutComponent,
     FooterComponent,
+    NotFoundComponent,
+    FeaturesComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule,CarouselModule,  AppRoutingModule, RouterModule.forRoot(routes)],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    CarouselModule,
+    AppRoutingModule,
+    RouterModule.forRoot(routes),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -10,6 +10,7 @@ import { SvgIconsComponent } from './components/shared/svg-icons/svg-icons.compo
 import { HeaderComponent } from './components/shared/header/header.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 // DEFINE THE ROUTES HERE
 
@@ -25,6 +26,7 @@ const routes: Routes = [
     SvgIconsComponent,
     HeaderComponent,
     AboutComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule,CarouselModule,  AppRoutingModule, RouterModule.forRoot(routes)],
   providers: [],

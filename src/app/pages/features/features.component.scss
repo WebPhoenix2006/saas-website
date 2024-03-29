@@ -1,0 +1,37 @@
+.header-section {
+  ::ng-deep header {
+    nav {
+      .main-nav-bar {
+        .navbar-nav {
+          background-color: var(--clr-secondary-200) !important;
+          .nav-link {
+            a {
+              color: var(--clr-dark) !important;
+              .dropdownEl {
+                background-color: var(--clr-secondary-600) !important;
+              }
+            }
+          }
+        }
+        .button {
+          background-color: var(--clr-primary) !important;
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__heading {
+    width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

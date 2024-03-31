@@ -3,6 +3,7 @@
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 9999;
   }
 }
 .banner {
@@ -119,8 +120,47 @@
     }
   }
 }
-.testimonial{
-  .featB{
+.testimonial {
+  .featB {
     padding: 15px 40px !important;
+  }
+}
+.pricing {
+  padding: 200px 150px;
+  .payment-meths {
+    .accepted {
+      background-color: #f8f8f8;
+      border-radius: 20px;
+      margin-top: 30px;
+    }
+  }
+  .basic{
+    padding: 50px 20px;
+    border-radius: 20px;
+
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #f8f8f8;
+      .button{
+        width: fit-content !important;
+        background-color: #fff !important;
+        color: #000 !important;
+      }
+    }
+    .act-price{
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .button{
+        width: fit-content !important;
+        padding: 5px 20px !important;
+        margin-top: 10px;
+      }
+    }
   }
 }

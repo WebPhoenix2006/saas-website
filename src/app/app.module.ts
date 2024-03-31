@@ -10,9 +10,9 @@ import { SvgIconsComponent } from './components/shared/svg-icons/svg-icons.compo
 import { HeaderComponent } from './components/shared/header/header.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
-import { FooterComponent } from './components/shared/footer/footer.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { FeaturesComponent } from './pages/features/features.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 // DEFINE THE ROUTES HERE
 
@@ -21,6 +21,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'features', component: FeaturesComponent },
   { path: '**', component: NotFoundComponent },
+
 ];
 
 @NgModule({
@@ -30,14 +31,14 @@ const routes: Routes = [
     SvgIconsComponent,
     HeaderComponent,
     AboutComponent,
-    FooterComponent,
-    NotFoundComponent,
     FeaturesComponent,
+    NotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     CarouselModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
   ],

@@ -134,32 +134,37 @@
       margin-top: 30px;
     }
   }
-  .basic{
+  .basic {
     padding: 50px 20px;
     border-radius: 20px;
 
-    .header{
+    .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-bottom: 25px;
       border-bottom: 1px solid #f8f8f8;
-      .button{
+      .button {
         width: fit-content !important;
         background-color: #fff !important;
         color: #000 !important;
       }
     }
-    .act-price{
+    .act-price {
       padding: 20px 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .button{
+      border-bottom: 1px solid #f8f8f8;
+
+      .button {
         width: fit-content !important;
         padding: 5px 20px !important;
         margin-top: 10px;
+        background-color: #ffeecc !important;
+        color: #c68a15 !important;
+        font-weight: normal !important;
       }
     }
   }

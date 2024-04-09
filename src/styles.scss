@@ -208,6 +208,14 @@ ul {
   &.secondary {
     background-color: var(--clr-dark);
   }
+  &.outline-dark {
+    border: 1px solid var(--clr-dark) !important;
+    color: var(--clr-dark);
+    &:hover {
+      background-color: var(--clr-dark);
+      color: #fff;
+    }
+  }
 }
 a {
   display: flex;

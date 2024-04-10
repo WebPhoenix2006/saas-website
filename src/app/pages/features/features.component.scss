@@ -27,11 +27,55 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &__heading {
     width: 450px;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  &__integration {
+    .heading {
+      width: 511px;
+      margin-inline: auto;
+      text-align: center;
+    }
+    .button-integration {
+      width: 166px !important;
+      padding: 2.5rem 3.7rem !important;
+      font-size: 1.8rem !important;
+      border-radius: 3.9rem !important;
+      margin-bottom: 3.1rem;
+    }
+
+    .items {
+      margin-inline: 150px;
+      margin-top: 4.9rem;
+      display: flex;
+      gap: 2rem;
+
+      .item {
+        background-color: var(--clr-secondary-200);
+
+        &__image {
+          margin-bottom: 2.95rem !important;
+        }
+
+        &__content {
+          text-align: center;
+
+          a {
+            margin-top: 4.5rem;
+            display: inline-block !important;
+          }
+        }
+
+        .all-in-one {
+          margin-top: 5.3rem;
+        }
+      }
+    }
   }
 }

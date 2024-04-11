@@ -1,0 +1,41 @@
+.header-section {
+  ::ng-deep header {
+    nav {
+      .main-nav-bar {
+        .navbar-nav {
+          background-color: var(--clr-secondary-200) !important;
+          .nav-link {
+            a {
+              color: var(--clr-dark) !important;
+              .dropdownEl {
+                background-color: var(--clr-secondary-600) !important;
+              }
+            }
+          }
+        }
+        .button {
+          background-color: var(--clr-primary) !important;
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  margin: 59px 200px;
+  &__header {
+    margin-top: 17.1rem;
+    h2 {
+      margin-bottom: 4.3rem;
+    }
+
+    .box {
+      padding-block: 3.4rem;
+      padding-left: 3.8rem;
+      padding-right: 5.4rem;
+      border-radius: 4rem;
+      box-shadow: 0px 24px 33px 0px #b5b5b540;
+    }
+  }
+}

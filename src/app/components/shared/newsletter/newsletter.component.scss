@@ -1,0 +1,11 @@
+.newsletter{
+    padding: 40px 250px;
+    .newsletterBody{
+        background-image: url("/assets/images/newsletter-back.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px 30px;
+        border-radius: 30px;
+        // background-color: var(--clr-primary);
+    }
+}

@@ -57,10 +57,20 @@
       gap: 2rem;
 
       .item {
-        background-color: var(--clr-secondary-200);
+        padding: 4.9rem 1.9rem;
+        border-radius: 4rem;
+        transition: background-color 100ms ease-in-out;
+
+        &:hover {
+          background-color: var(--clr-secondary-200);
+        }
 
         &__image {
           margin-bottom: 2.95rem !important;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-inline: auto;
         }
 
         &__content {
@@ -77,5 +87,9 @@
         }
       }
     }
+  }
+
+  &__newsletter {
+    margin-top: 20rem;
   }
 }

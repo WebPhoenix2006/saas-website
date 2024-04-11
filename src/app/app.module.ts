@@ -14,6 +14,7 @@ import { FeaturesComponent } from './pages/features/features.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { SharedFeatureComponent } from './components/shared/shared-feature/shared-feature.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 // DEFINE THE ROUTES HERE
 
@@ -21,8 +22,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'features', component: FeaturesComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '**', component: NotFoundComponent },
-
 ];
 
 @NgModule({
@@ -35,7 +36,8 @@ const routes: Routes = [
     FeaturesComponent,
     NotFoundComponent,
     FooterComponent,
-    SharedFeatureComponent
+    SharedFeatureComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

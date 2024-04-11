@@ -14,6 +14,7 @@ import { FeaturesComponent } from './pages/features/features.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { SharedFeatureComponent } from './components/shared/shared-feature/shared-feature.component';
+import { NewsletterComponent } from './components/shared/newsletter/newsletter.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
 // DEFINE THE ROUTES HERE
@@ -37,7 +38,7 @@ const routes: Routes = [
     NotFoundComponent,
     FooterComponent,
     SharedFeatureComponent,
-    ContactComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,

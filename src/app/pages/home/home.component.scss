@@ -72,7 +72,7 @@
   }
 }
 .how-it-works {
-  padding: 200px 150px;
+  padding: 180px 150px;
   .featB {
     width: 160px;
     padding: 15px 30px !important;
@@ -112,7 +112,7 @@
   }
 }
 .pricing {
-  padding: 200px 150px;
+  padding: 180px 150px;
   .payment-meths {
     .accepted {
       background-color: #f8f8f8;
@@ -152,6 +152,47 @@
         color: #c68a15 !important;
         font-weight: normal !important;
       }
+    }
+  }
+}
+.blog {
+  padding: 180px 150px;
+  .row {
+    padding: 15px;
+    .leftside {
+      padding: 30px !important;
+      background-color: var(--clr-secondary-200);
+      border-radius: 30px;
+      .blogImg {
+      position: relative;
+        .categories {
+          position: absolute;
+          bottom: 10px;
+          width: 70%;
+          .cat {
+            padding: 10px 10px;
+            color: var(--clr-dark);
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+          }
+        }
+      }
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
+}
+@media(max-width: 1000px){
+  .platform-desc, .how-it-works, .testimonial, .blog, .pricing, .banner, .newsletter, .features{
+    padding: 20px !important;
+  }
+  .platform-desc{
+    .descImg, .rightSide{
+      display: none !important;
     }
   }
 }

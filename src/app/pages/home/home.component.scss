@@ -186,3 +186,13 @@
     }
   }
 }
+@media(max-width: 1000px){
+  .platform-desc, .how-it-works, .testimonial, .blog, .pricing, .banner, .newsletter, .features{
+    padding: 20px !important;
+  }
+  .platform-desc{
+    .descImg, .rightSide{
+      display: none !important;
+    }
+  }
+}

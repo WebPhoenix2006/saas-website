@@ -1,31 +1,24 @@
-<div class="header-section">
-  <app-header></app-header>
-</div>
-<section class="about">
-  <div class="about__header">
-    <h2>About our company</h2>
-    <p class="defaultPar">
+<main class="about">
+  <section class="about__header">
+    <h2 class="text-center">About our company</h2>
+    <p class="defaultPar text-center">
       Lorem ipsum dolor sit amet consectetur adipiscing elit interdum
       ullamcorper sed pharetra sene.
     </p>
-  </div>
+  </section>
 
-  <div class="about__image row">
+  <section class="about__image row">
+    <img src="assets/images/Image.png" alt="" class="img-fluid col-md-7" />
     <img
-      src="../../../assets/images/Image.png"
-      alt=""
-      class="img-fluid col-md-7"
-    />
-    <img
-      src="../../../assets/images/about image 2.png"
+      src="assets/images/about image 2.png"
       alt=""
       class="img-fluid col-md-4"
     />
-  </div>
+  </section>
 
-  <div class="about__services row">
+  <section class="about__services row">
     <h3 class="col-md-4">What we do</h3>
-    <div class="col-md-8">
+    <div class="col-md-8 content">
       <p class="defaultPar">
         It is a long established fact that a reader will be distracted by the
         readable content of a page when looking at its layout. The point of
@@ -40,9 +33,9 @@
         sites still in their infancy.
       </p>
     </div>
-  </div>
+  </section>
 
-  <div class="about__reports row">
+  <section class="about__reports row">
     <div class="col-md-3">
       <h2>100<span>M</span></h2>
       <p class="defaultPar">Client Satisfaction</p>
@@ -59,10 +52,10 @@
       <h2>208 <span>+</span></h2>
       <p class="defaultPar">Client Worldwide</p>
     </div>
-  </div>
+  </section>
 
-  <div class="about__mission row">
-    <div class="mission-content col-md-5">
+  <section class="about__mission row">
+    <div class="mission-content col-lg-6">
       <h3>Our Mission</h3>
       <p class="defaultPar">
         Lorem ipsum dolor sit amet, consectetur adipiscing Pharetra Ld eu
@@ -76,81 +69,72 @@
         pharetra egestas.
       </p>
     </div>
-    <div class="mission-image col-md-6">
-      <img
-        src="../../../assets/images/mission image.png"
-        alt=""
-        class="img-fluid"
-      />
+    <div class="mission-image col-lg-6">
+      <img src="assets/images/mission image.png" alt="" class="img-fluid" />
     </div>
-  </div>
+  </section>
 
-  <div class="about__values">
-    <div class="header">
-      <button class="button">Our values</button>
-      <h3>The story and values behind our company</h3>
+  <section class="about__values">
+    <div
+      class="header d-flex flex-column align-items-center justify-content-center"
+    >
+      <button class="button bgSecond2">Our values</button>
+      <h3 class="text-center">The story and values behind our company</h3>
     </div>
-    <div class="card-wrapper">
-      <div class="card">
-        <div>
-          <img src="assets/images/innovation-icon.png" alt="" />
-        </div>
-        <div>
-          <h3>Innovation</h3>
-          <p class="defaultPar">
-            Long established fact that a readeed to will be distracted by the
-            readable content of a page when looking at its layout Long
-            established fact that a readeed to will be distracted by the
-            readable content of a page when looking at its layout
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div>
-          <img src="assets/images/team-work.png" alt="" />
-        </div>
-        <div>
-          <h3>Team work</h3>
-          <p class="defaultPar">
-            Long established fact that a readeed to will be distracted by the
-            readable content of a page when looking at its layout Long
-            established fact that a readeed to will be distracted by the
-            readable content of a page when looking at its layout
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div>
-          <img src="assets/images/excellence-icon.png" alt="" />
-        </div>
-        <div>
-          <h3>Excellence</h3>
-          <p class="defaultPar">
-            Long established fact that a readeed to will be distracted by the
-            readable content of a page when looking at its layout Long
-            established fact that a readeed to will be distracted by the
-            readable content of a page when looking at its layout
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div>
-          <img src="assets/images/responsibility-icon.png" alt="" />
-        </div>
-        <div>
-          <h3>Responsibility</h3>
-          <p class="defaultPar">
-            Long established fact that a readeed to will be distracted by the
-            readable content of a page when looking at its layout Long
-            established fact that a readeed to will be distracted by the
-            readable content of a page when looking at its layout
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="about__career row">
+    <div class="boxes">
+      <div class="box">
+        <svg-icons class="img-fluid" name="bulb"></svg-icons>
+        <div class="box-content">
+          <h3 class="box-title">Innovation</h3>
+          <p class="box-text defaultPar">
+            Long established fact that a readeed to will be distracted by the
+            readable content of a page when looking at its layout Long
+            established fact that a readeed to will be distracted by the
+            readable content of a page when looking at its layout
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <svg-icons class="img-fluid" name="people"></svg-icons>
+        <div class="box-content">
+          <h3 class="box-title">Team Work</h3>
+          <p class="box-text defaultPar">
+            Long established fact that a readeed to will be distracted by the
+            readable content of a page when looking at its layout Long
+            established fact that a readeed to will be distracted by the
+            readable content of a page when looking at its layout
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <svg-icons class="img-fluid" name="badge"></svg-icons>
+        <div class="box-content">
+          <h3 class="box-title">Excellence</h3>
+          <p class="box-text defaultPar">
+            Long established fact that a readeed to will be distracted by the
+            readable content of a page when looking at its layout Long
+            established fact that a readeed to will be distracted by the
+            readable content of a page when looking at its layout
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <svg-icons class="img-fluid" name="notes"></svg-icons>
+        <div class="box-content">
+          <h3 class="box-title">Responsibity</h3>
+          <p class="box-text defaultPar">
+            Long established fact that a readeed to will be distracted by the
+            readable content of a page when looking at its layout Long
+            established fact that a readeed to will be distracted by the
+            readable content of a page when looking at its layout
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about__career row">
     <div class="heading col-md-5">
       <button class="button small textPrimary1">Career</button>
       <h2>Join our Saasup Let’s work together</h2>
@@ -199,7 +183,9 @@
         <button class="button buttonWhite">Apply Now</button>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
-<app-footer></app-footer>
+<footer>
+  <app-footer></app-footer>
+</footer>

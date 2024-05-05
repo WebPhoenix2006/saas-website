@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  navbar = document.querySelector('.navigation__nav');
+  toggleNavbar() {
+    this.navbar.classList.add('remove');
+  }
+}

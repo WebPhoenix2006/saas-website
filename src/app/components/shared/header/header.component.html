@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
   <nav class="main-nav">
     <div class="row">
       <div class="col-4 d-flex align-items-center">
@@ -53,5 +53,28 @@
         </div>
       </div>
     </div>
+  </nav>
+</header> -->
+
+<header class="navigation d-flex align-items-center justify-content-between">
+  <a class="navigation__logo d-flex align-items-center">
+    <img src="assets/images/logo.png" alt="" class="logo__image" />
+    <h1 class="logo__text ps-2">SaaSup</h1>
+  </a>
+  <button class="hamburger" (click)="toggleNavbar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav class="navigation__nav">
+    <ul class="nav__links">
+      <li class="nav__item"><a routerLink="" class="nav__link">Home</a></li>
+      <li class="nav__item"><a routerLink="" class="nav__link">About</a></li>
+      <li class="nav__item"><a routerLink="" class="nav__link">Features</a></li>
+      <li class="nav__item"><a routerLink="" class="nav__link">Pages</a></li>
+      <li class="nav__item"><a routerLink="" class="nav__link">Blog</a></li>
+      <li class="nav__item"><a routerLink="" class="nav__link">Cart (0)</a></li>
+    </ul>
+    <button class="button small bgPrimary1">Sign in</button>
   </nav>
 </header>
